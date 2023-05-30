@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;600&family=Rubik:wght@300;400&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.imgFavicon_LM{
+    width: 2rem;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    background-color: #d5d5d5fa;
+}
+
+.header-nav{
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #d5d5d5fa;
+    z-index: 11;
+}
+
+.nav-interaction{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+    font-weight: 600;
+}
+
+.boton-link{
+    display: flex;
+    gap: 0.5rem;
+    cursor: pointer;
+    color: #ff9500;
+    font-size: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    background-color: #fafafa;
+    padding: 0.2rem 0.5rem;
+    border-radius: 0.2rem;
+    box-shadow: 0 0.25rem 1rem 0.1rem #ff950025;
+
+}
+
+
+.boton-nav{
+    border: none;
+    background-color: #fafafa;
+    padding: 0.6rem;
+    border-radius: 0.2rem;
+    font-weight: 600;
+    cursor: pointer;
+    color: #ff9500;
+    box-shadow: 0 0.25rem 1rem 0.1rem #ff950025;
+    transition: all 0.35s;
+
+}
+
+.boton-nav:hover{
+    color: #fafafa;
+    background-color: #ff9500;
+}
+
+
+main{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.logo{
+    font-size: 2.3rem;
+    letter-spacing: 0.15rem;
+}
+
+.derechos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
+    padding-block: 0.5rem;
+    margin-top: 2rem;
+}
+
+aside{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 2rem;
+    padding-right: 0;
+}
+
+.filtros-menu{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.boton-filtro{
+    border: none;
+    background-color: #d5d5d5;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.boton-filtro.active{
+    background-color: #fafafa;
+    width: 100%;
+    border-radius: 0.3rem;
+    box-shadow: 0 0.25rem 1rem 0.1rem #ff950025;
+}
+
+.derechosTexto{
+    font-size: 0.6rem;
+}
+
+/* Sección productos */
+
+.seccion-productos{
+    background-color: #fafafa;
+    padding: 2rem;
+}
+
+.titulo-seccion{
+    margin-bottom: 1rem;
+}
+
+.grilla-productos{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.2rem;
+}
+
+.tarjeta-producto{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.imagen-producto{
+    max-height: 100%;
+    max-width: 100%;
+    border-radius: 1rem 1rem 0 0;
+    margin-bottom: 0;
+}
+
+.tarjeta-especificacion{
+    display: flex;
+    flex-direction: column;
+    background-color: #d5d5d5fa;
+    border-radius: 0 0 1rem 1rem;
+    padding: 0.5rem 1rem;
+    margin-top: -0.3rem;
+    z-index: 1;
+    gap: 0.4rem;
+    flex: 1;
+    justify-content: flex-end;
+}
+
+.producto-alquilar{
+    border: none;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 0.5rem 0.1rem #ff950025;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    background-color: #fafafa;
+    border: 1px solid #fafafa;
+    transition: background-color  0.2s, color 0.2s;
+}
+
+.producto-alquilar:hover{
+    background-color: #d5d5d5;
+}
+
+/* Alquileres */
+
+.carrito-vacio{
+    font-size: 600;
+    color:#ff9500
+}
+
+.producto-alquiler{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.imagen-carrito{
+    max-height: 100%;
+    width: 8rem;
+    margin-block: -0.5rem;
+}
+
+.producto-carrito{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    margin-block: 1rem;
+    padding: 0.5rem;
+    align-items: center;
+    background-color: #d5d5d53b;
+    border-radius: 0.3rem;
+}
+
+.carrito-producto-titulo{
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.carrito-producto-eliminar{
+    border: none;
+    background-color: transparent;
+    color: #ff9500;
+    cursor: pointer;
+}
+
+.carrito-cierre{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 1rem;
+    margin: 2rem;
+}
+
+.carrito-cierre-cancelar{
+    border: none;
+    background-color: #d5d5d53b;
+    padding: 1rem;
+    font-weight: 800;
+    border-radius: 0.3rem;
+    color: #ff9500;
+    cursor: pointer;
+}
+
+.carrito-cierre-reservar button{
+    display: flex;
+    flex-direction: row;
+    border: none;
+    background-color: #1d4e29;
+    padding: 1rem;
+    font-weight: 800;
+    border-radius: 0.3rem;
+    color: white;
+    gap: 1rem;
+    cursor: pointer;
+}
+
+.carrito-cierre-total{
+    color: #ff9500;
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+
+.disabled{
+    display: none;
+}

@@ -4,10 +4,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyecto 2 Coder</title>
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <title>Alquilauto</title>
 </head>
 <body>
-    <h1>Proyecto 2 Coder</h1>
-    <script src="main.js"></script>
+    <div class="container">
+        <header class="header-nav">
+            <h1 class="logo">Alquilauto</h1>
+            <nav>
+                <ul class="nav-interaction">
+                    <button class="boton-nav">Ingresa tu auto</button>
+                    <button class="boton-nav">Iniciar Sesión</button>
+                    <a class="boton-link" href="./alquiler.html"><i class="bi bi-car-front-fill"></i> <span id="carrito" class="indicador">0</span></a>
+                </ul>
+
+            </nav>
+        </header>
+        <main>
+            <aside>
+                <ul class="filtros-menu">
+                    <li>
+                        <button id="todos" class="boton-filtro active"><i class="bi bi-caret-right-fill"></i>Todos los autos</button>
+                    </li>
+                    <li>
+                        <button id="SUV" class="boton-filtro"><i class="bi bi-caret-right-fill"></i>SUV</button>
+                    </li>
+                    <li>
+                        <button id="Sedan" class="boton-filtro"><i class="bi bi-caret-right-fill"></i>Sedans</button>
+                    </li>
+                    <li>
+                        <button id="Hatchback" class="boton-filtro"><i class="bi bi-caret-right-fill"></i>Hatchback</button>
+                    </li>
+                </ul>
+            </aside>
+            <section class="seccion-productos">
+                <h2 id="tituloSeccion" class="titulo-seccion">Todos los productos</h2>
+                <div id="seccion-productos" class="grilla-productos">
+            </section>
+        </main>
+        <footer>
+        <div class="derechos">
+            <img class="imgFavicon_LM" src="./img/Logo_LM.webp" alt="Logo LM">
+            <p class="derechosTexto">© LMVW 2023</p>
+        </div>
+        </footer>
+    </div>
+
+    <script src="./JS/main.js"></script>
 </body>
 </html>
