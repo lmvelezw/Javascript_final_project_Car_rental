@@ -14,7 +14,7 @@ class Vehiculo{
 }
 
     let vehiculos = [
-        new Vehiculo("1","Ford","Escape",2022,25000,100000,"SUV","../img/autos/escape.webp",0),
+        new Vehiculo("1","Ford","Escape",2022,25000,100000,"SUV","/escape.webp",0),
         new Vehiculo("2","Mazda","CX5",2023,5420,130000,"SUV","../img/autos/cx5.jpeg",0),
         new Vehiculo("3","Toyota","4Runner",2018,53200,150000,"SUV","../img/autos/4runner.jpeg",0),
         new Vehiculo("4","Mercedes Benz","GLC200",2021,3500,250000,"SUV","../img/autos/glc200.jpeg",0),
