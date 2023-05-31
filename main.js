@@ -14,20 +14,20 @@ class Vehiculo{
 }
 
     let vehiculos = [
-        new Vehiculo("1","Ford","Escape",2022,25000,100000,"SUV","../img/escape.webp",0),
-        new Vehiculo("2","Mazda","CX5",2023,5420,130000,"SUV","../img/cx5.jpeg",0),
-        new Vehiculo("3","Toyota","4Runner",2018,53200,150000,"SUV","../img/4runner.jpeg",0),
-        new Vehiculo("4","Mercedes Benz","GLC200",2021,3500,250000,"SUV","../img/glc200.jpeg",0),
-        new Vehiculo("5","Audi","Q5",2020,26250,130000,"SUV","../img/q5.jpeg",0),
-        new Vehiculo("6","BMW","X5",2019,27500,160000,"SUV","../img/x5.webp",0),
-        new Vehiculo("7","Volvo","XC60",2018,27500,120000,"SUV","../img/xc60.jpeg",0),
-        new Vehiculo("8","Mazda","2",2023,2000,8000,"Hatchback","../img/mazda2.jpeg",0),
-        new Vehiculo("9","Fiat","500e",2022,5050,100000,"Hatchback","../img/500e.jpeg",0),
-        new Vehiculo("10","Mercedes Benz","A45 AMG",2022,5200,250000,"Hatchback","../img/a45.jpeg",0),
-        new Vehiculo("11","Mercedes Benz","C250",2020,3500,250000,"Sedan","../img/c250.avif",0),
-        new Vehiculo("12","Audi","A8",2021,2250,330000,"Sedan","../img/a8.jpeg",0),
-        new Vehiculo("13","Volvo","S60",2022,7500,180000,"Sedan","../img/s60.jpeg",0),
-        new Vehiculo("14","BMW","3 Series",2023,500,260000,"Sedan","../img/serie3.png",0),
+        new Vehiculo("1","Ford","Escape",2022,25000,100000,"SUV","./img/escape.webp",0),
+        new Vehiculo("2","Mazda","CX5",2023,5420,130000,"SUV","./img/cx5.jpeg",0),
+        new Vehiculo("3","Toyota","4Runner",2018,53200,150000,"SUV","./img/4runner.jpeg",0),
+        new Vehiculo("4","Mercedes Benz","GLC200",2021,3500,250000,"SUV","./img/glc200.jpeg",0),
+        new Vehiculo("5","Audi","Q5",2020,26250,130000,"SUV","./img/q5.jpeg",0),
+        new Vehiculo("6","BMW","X5",2019,27500,160000,"SUV","./img/x5.webp",0),
+        new Vehiculo("7","Volvo","XC60",2018,27500,120000,"SUV","./img/xc60.jpeg",0),
+        new Vehiculo("8","Mazda","2",2023,2000,8000,"Hatchback","./img/mazda2.jpeg",0),
+        new Vehiculo("9","Fiat","500e",2022,5050,100000,"Hatchback","./img/500e.jpeg",0),
+        new Vehiculo("10","Mercedes Benz","A45 AMG",2022,5200,250000,"Hatchback","./img/a45.jpeg",0),
+        new Vehiculo("11","Mercedes Benz","C250",2020,3500,250000,"Sedan","./img/c250.avif",0),
+        new Vehiculo("12","Audi","A8",2021,2250,330000,"Sedan","./img/a8.jpeg",0),
+        new Vehiculo("13","Volvo","S60",2022,7500,180000,"Sedan","./img/s60.jpeg",0),
+        new Vehiculo("14","BMW","3 Series",2023,500,260000,"Sedan","./img/serie3.png",0),
     ];
 
 const seccionProductos = document.querySelector('#seccion-productos');
