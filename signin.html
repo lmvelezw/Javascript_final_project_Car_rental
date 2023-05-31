@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/main.css">
+    <title>Iniciar sesión</title>
+</head>
+<body>
+    <main>
+
+        <h1 id="headerLogin">Iniciar sesión</h1>;
+        <div id="errorLogin">
+            <p id="errorLoginMensaje" class="enabled">Usuario o clave inválidos</p>;
+        </div>;
+
+        <form id="loginFormulario">
+            <input type="text" name="usuario" id="usuario" class="campoFormulario" placeholder="Ingrese su usuario">;
+            <input type="password" name="password" id="password" class="campoFormulario" placeholder="Ingrese su contraseña">;
+            <input type="submit" value="Ingresar" id="loginBoton" class="botonFormulario">;
+        </form>
+    </main>
+
+
+    <script src="./signin.js"></script>
+</body>
+</html>
