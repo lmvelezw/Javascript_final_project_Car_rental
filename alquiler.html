@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,13 +9,14 @@
     <link rel="stylesheet" href="./styles/main.css">
     <title>Tu alquiler</title>
 </head>
+
 <body>
+    <canvas id="my-canvas"></canvas>
     <div class="container">
         <header class="header-nav">
-            <h1 class="logo">Alquilauto</h1>
+            <h1 class="logo"><a href="./index.html">Alquilauto</a></h1>
             <nav>
                 <ul class="nav-interaction">
-                    <button class="boton-nav">Ingresa tu auto</button>
                     <button class="boton-nav">Iniciar Sesión</button>
                 </ul>
 
@@ -23,7 +25,8 @@
         <main>
             <aside>
                 <ul class="filtros-menu">
-                    <a class="boton-filtro" href="./index.html"><i class="bi bi-caret-left-fill"></i>Volver al inicio</a>
+                    <a class="boton-filtro" href="./index.html"><i class="bi bi-caret-left-fill"></i>Volver al
+                        inicio</a>
                 </ul>
             </aside>
             <section id="seccion-productos" class="seccion-productos">
@@ -46,7 +49,6 @@
                         <button><i class="bi bi-calendar-check"></i>Resevar</button>
                     </div>
                 </div>
-                <p id="carritoCierre" class="carrito-cierre disabled">Gracias por tu alquiler</p>
 
 
             </section>
@@ -56,11 +58,16 @@
                 <img class="imgFavicon_LM" src="./img/Logo_LM.webp" alt="Logo LM">
                 <p class="derechosTexto">© LMVW 2023</p>
             </div>
-            </footer>
-        </div>
+        </footer>
+    </div>
     </div>
 
+    <script src="node_modules/confetti-js/dist/index.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
     <script src="./alquileres.js"></script>
-    
+
 </body>
+
 </html>

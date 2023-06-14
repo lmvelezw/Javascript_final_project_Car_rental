@@ -1,0 +1,157 @@
+[
+    {
+      "id": "1",
+      "marca": "Ford",
+      "modelo": "Escape",
+      "anio": 2022,
+      "kilometraje": 25000,
+      "valorDia": 100000,
+      "categoria": "SUV",
+      "imagen": "./img/escape.webp",
+      "dias": 0
+    },
+    {
+      "id": "2",
+      "marca": "Mazda",
+      "modelo": "CX5",
+      "anio": 2023,
+      "kilometraje": 5420,
+      "valorDia": 130000,
+      "categoria": "SUV",
+      "imagen": "./img/cx5.webp",
+      "dias": 0
+    },
+    {
+      "id": "3",
+      "marca": "Toyota",
+      "modelo": "4Runner",
+      "anio": 2018,
+      "kilometraje": 53200,
+      "valorDia": 150000,
+      "categoria": "SUV",
+      "imagen": "./img/4runner.webp",
+      "dias": 0
+    },
+    {
+      "id": "4",
+      "marca": "Mercedes Benz",
+      "modelo": "GLC200",
+      "anio": 2021,
+      "kilometraje": 3500,
+      "valorDia": 250000,
+      "categoria": "SUV",
+      "imagen": "./img/glc200.webp",
+      "dias": 0
+    },
+    {
+      "id": "5",
+      "marca": "Audi",
+      "modelo": "Q5",
+      "anio": 2020,
+      "kilometraje": 26250,
+      "valorDia": 130000,
+      "categoria": "SUV",
+      "imagen": "./img/q5.webp",
+      "dias": 0
+    },
+    {
+      "id": "6",
+      "marca": "BMW",
+      "modelo": "X5",
+      "anio": 2019,
+      "kilometraje": 27500,
+      "valorDia": 160000,
+      "categoria": "SUV",
+      "imagen": "./img/x5.webp",
+      "dias": 0
+    },
+    {
+      "id": "7",
+      "marca": "Volvo",
+      "modelo": "XC60",
+      "anio": 2018,
+      "kilometraje": 27500,
+      "valorDia": 120000,
+      "categoria": "SUV",
+      "imagen": "./img/xc60.webp",
+      "dias": 0
+    },
+    {
+      "id": "8",
+      "marca": "Mazda",
+      "modelo": "2",
+      "anio": 2023,
+      "kilometraje": 2000,
+      "valorDia": 8000,
+      "categoria": "Hatchback",
+      "imagen": "./img/mazda2.webp",
+      "dias": 0
+    },
+    {
+      "id": "9",
+      "marca": "Fiat",
+      "modelo": "500e",
+      "anio": 2022,
+      "kilometraje": 5050,
+      "valorDia": 100000,
+      "categoria": "Hatchback",
+      "imagen": "./img/500e.webp",
+      "dias": 0
+    },
+    {
+      "id": "10",
+      "marca": "Mercedes Benz",
+      "modelo": "A45 AMG",
+      "anio": 2022,
+      "kilometraje": 5200,
+      "valorDia": 250000,
+      "categoria": "Hatchback",
+      "imagen": "./img/a45.webp",
+      "dias": 0
+    },
+    {
+      "id": "11",
+      "marca": "Mercedes Benz",
+      "modelo": "C250",
+      "anio": 2020,
+      "kilometraje": 3500,
+      "valorDia": 250000,
+      "categoria": "Sedan",
+      "imagen": "./img/c250.webp",
+      "dias": 0
+    },
+    {
+      "id": "12",
+      "marca": "Audi",
+      "modelo": "A8",
+      "anio": 2021,
+      "kilometraje": 2250,
+      "valorDia": 330000,
+      "categoria": "Sedan",
+      "imagen": "./img/a8.webp",
+      "dias": 0
+    },
+    {
+      "id": "13",
+      "marca": "Volvo",
+      "modelo": "S60",
+      "anio": 2022,
+      "kilometraje": 7500,
+      "valorDia": 180000,
+      "categoria": "Sedan",
+      "imagen": "./img/s60.webp",
+      "dias": 0
+    },
+    {
+      "id": "14",
+      "marca": "BMW",
+      "modelo": "3 Series",
+      "anio": 2023,
+      "kilometraje": 500,
+      "valorDia": 260000,
+      "categoria": "Sedan",
+      "imagen": "./img/serie3.webp",
+      "dias": 0
+    }
+  ]
+  
