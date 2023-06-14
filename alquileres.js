@@ -1,3 +1,5 @@
+import ConfettiGenerator from "confetti-js";
+
 let alquileres = localStorage.getItem("alquileres");
 alquileres = JSON.parse(alquileres);
 
@@ -111,7 +113,7 @@ function comprobarAlquiler() {
     timer: 3800,
   });
 
-  var confettiSettings = {
+  let confettiSettings = {
     target: "my-canvas",
     max: 300,
     size: 1,
@@ -130,7 +132,7 @@ function comprobarAlquiler() {
     start_from_edge: false,
     respawn: true,
   };
-  var confetti = new ConfettiGenerator(confettiSettings);
+  let confetti = new ConfettiGenerator(confettiSettings);
   confetti.render();
 
   carritoVacio.classList.add("disabled");
