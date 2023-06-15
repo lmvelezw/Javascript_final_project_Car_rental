@@ -69,16 +69,32 @@ function cancelarAlquiler() {
 function eliminarDelCarrito(e) {
   const id = e.currentTarget.id;
   const index = alquileres.findIndex((alquiler) => alquiler.id === id);
-  alquileres.splice(index, 1);
-  mostrarProductosCarrito();
+
   Swal.fire({
-    position: "center",
-    icon: "success",
-    title: "Alquiler eliminado",
-    showConfirmButton: false,
-    timer: 1000,
-  });
-  localStorage.setItem("alquileres", JSON.stringify(alquileres));
+    text: "Cancelar alquiler?",
+    icon: 'warning',
+    showCancelButton: true,
+    confirmButtonColor: 'red',
+    cancelButtonColor: '#ff9500',
+    confirmButtonText: 'Si, cancelar!',
+    cancelButtonText: 'Volver',
+  }).then((result) => {
+    if (result.isConfirmed) {
+      alquileres.splice(index, 1);
+      mostrarProductosCarrito();
+      Swal.fire({
+        position: "center",
+        icon: "success",
+        title: "Alquiler eliminado",
+        showConfirmButton: false,
+        timer: 1000,
+      });
+      localStorage.setItem("alquileres", JSON.stringify(alquileres));
+    }
+  })
+
+
+
 }
 
 carritoCancelar.addEventListener("click", cancelarAlquileres);
@@ -138,7 +154,7 @@ function comprobarAlquiler() {
   carritoAcciones.classList.add("disabled");
 
   setTimeout(function () {
-    window.location.href = "index.html";
+    window.location.href = "./index.html";
     confetti.clear();
   }, 4100);
 }
