@@ -92,18 +92,33 @@ function eliminarDelCarrito(e) {
       localStorage.setItem("alquileres", JSON.stringify(alquileres));
     }
   })
-
-
-
 }
 
 carritoCancelar.addEventListener("click", cancelarAlquileres);
 
 function cancelarAlquileres() {
-  alquileres.length = [];
-  localStorage.setItem("alquileres", JSON.stringify(alquileres));
-
-  mostrarProductosCarrito();
+  Swal.fire({
+    text: "Cancelar todos los alquileres?",
+    icon: 'warning',
+    showCancelButton: true,
+    confirmButtonColor: 'red',
+    cancelButtonColor: '#ff9500',
+    confirmButtonText: 'Si, cancelar!',
+    cancelButtonText: 'Volver',
+  }).then((result) => {
+    if (result.isConfirmed) {
+      alquileres.length = [];
+      localStorage.setItem("alquileres", JSON.stringify(alquileres));
+      Swal.fire({
+        position: "center",
+        icon: "success",
+        title: "Alquileres eliminados",
+        showConfirmButton: false,
+        timer: 1000,
+      });
+      mostrarProductosCarrito();
+    }
+  })
 }
 
 function valorTotalactual() {
