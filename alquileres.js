@@ -1,5 +1,3 @@
-import ConfettiGenerator from "confetti-js";
-
 let alquileres = localStorage.getItem("alquileres");
 alquileres = JSON.parse(alquileres);
 
@@ -141,5 +139,6 @@ function comprobarAlquiler() {
 
   setTimeout(function () {
     window.location.href = "index.html";
+    confetti.clear();
   }, 4100);
 }
