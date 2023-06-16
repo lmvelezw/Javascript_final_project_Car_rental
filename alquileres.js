@@ -129,12 +129,29 @@ function valorTotalactual() {
   );
   valorTotal.innerText = `$${totalActual.toLocaleString()}`;
 }
+let confettiSettings = {
+  target: "my-canvas",
+  max: 300,
+  size: 1,
+  animate: true,
+  props: ["circle", "square", "triangle", "line"],
+  colors: [
+    [165, 104, 246],
+    [230, 61, 135],
+    [0, 199, 228],
+    [253, 214, 126],
+  ],
+  clock: 25,
+  rotate: true,
+  width: 1231,
+  height: 910,
+  start_from_edge: false,
+  respawn: true,
+};
 
 carritoReservar.addEventListener("click", comprobarAlquiler);
 function comprobarAlquiler() {
-  alquileres.length = [];
-  localStorage.setItem("alquileres", JSON.stringify(alquileres));
-
+  
   Swal.fire({
     position: "center",
     icon: "success",
@@ -142,39 +159,22 @@ function comprobarAlquiler() {
     showConfirmButton: false,
     timer: 3800,
   });
-
-  let confettiSettings = {
-    target: "my-canvas",
-    max: 300,
-    size: 1,
-    animate: true,
-    props: ["circle", "square", "triangle", "line"],
-    colors: [
-      [165, 104, 246],
-      [230, 61, 135],
-      [0, 199, 228],
-      [253, 214, 126],
-    ],
-    clock: 25,
-    rotate: true,
-    width: 1231,
-    height: 910,
-    start_from_edge: false,
-    respawn: true,
-  };
+  
   confettiCompra.classList.remove("sendBack")
   confettiCompra.classList.add("bringFront")
   let confetti = new ConfettiGenerator(confettiSettings);
   confetti.render();
-
-  carritoVacio.classList.add("disabled");
-  carritoConProductos.classList.add("disabled");
-  carritoAcciones.classList.add("disabled");
-
+  
   setTimeout(function () {
     confetti.clear();
     confettiCompra.classList.remove("bringFront")
     confettiCompra.classList.add("sendBack")
-    window.location.href = "./index.html";
+    window.open("./index.html", "_self");
   }, 4100);
+  
+  alquileres.length = [];
+  localStorage.setItem("alquileres", JSON.stringify(alquileres));
+  carritoVacio.classList.add("disabled");
+  carritoConProductos.classList.add("disabled");
+  carritoAcciones.classList.add("disabled");
 }
