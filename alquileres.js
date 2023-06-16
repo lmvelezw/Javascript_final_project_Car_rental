@@ -8,6 +8,7 @@ let eliminarAlquiler = document.querySelector(".carrito-producto-eliminar");
 const carritoCancelar = document.querySelector("#carritoCancelar");
 const valorTotal = document.querySelector("#total");
 const carritoReservar = document.querySelector("#carritoReservar");
+const confettiCompra = document.querySelector("#my-canvas")
 
 function mostrarProductosCarrito() {
   if (alquileres && alquileres.length > 0) {
@@ -161,6 +162,8 @@ function comprobarAlquiler() {
     start_from_edge: false,
     respawn: true,
   };
+  confettiCompra.classList.remove("sendBack")
+  confettiCompra.classList.add("bringFront")
   let confetti = new ConfettiGenerator(confettiSettings);
   confetti.render();
 
@@ -169,7 +172,9 @@ function comprobarAlquiler() {
   carritoAcciones.classList.add("disabled");
 
   setTimeout(function () {
-    window.location.href = "./index.html";
     confetti.clear();
+    confettiCompra.classList.remove("bringFront")
+    confettiCompra.classList.add("sendBack")
+    window.location.href = "./index.html";
   }, 4100);
 }

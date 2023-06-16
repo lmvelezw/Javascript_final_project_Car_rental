@@ -324,8 +324,14 @@ aside {
   max-height: 100vh;
 }
 
-#my-canvas {
+.bringFront {
   background-color: transparent;
   position: absolute;
-  /* z-index: 100; */
+  width: 100vw;
+  height: 100vh;
+  z-index: 100;
+}
+
+.sendBack{
+  z-index: -1;
 }
